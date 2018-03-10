@@ -1,0 +1,117 @@
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss';
+
+header {
+    height: 130px;
+    background-color: white;
+    padding-top: 5px;
+
+    @include media-breakpoint-down(sm) {
+        height: 200px;
+    }
+}
+
+#section-abo {
+    height: 200px;
+    background-color: lightgrey;
+}
+
+#top-bar {
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#middle-bar {
+    height: calc(60%);
+    position: relative;
+    padding-top: 10px;
+}
+
+#media-container {
+    height: 100%;
+    background-color: pink;
+    width: 130px;
+}
+
+#signin-container {
+    height: 100%;
+    background-color: lightyellow;
+    width: 300px;
+    font-size: 10px;
+
+    @include media-breakpoint-down(sm) {
+        width: 140px;
+    }
+}
+
+#signin-container div {
+    text-align: center;
+
+    @include media-breakpoint-down(sm) {
+        text-align: end;
+    }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+}
+
+nav li {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0;
+    width: 100px;
+
+    @include media-breakpoint-down(md) {
+        font-size: 10px;
+        width: 80px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+
+}
+
+#li-middle-gap {
+    margin-left: 200px;
+
+    @include media-breakpoint-down(md) {
+        margin-left: 160px;
+    }
+}
+
+#top-img-container {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translate(-50%);
+    height: 90px;
+    width: 90px;
+    background-color: brown;
+
+    @include media-breakpoint-down(sm) {
+        top: unset;
+        bottom: 20px;
+    }
+}
+
+#menu-dropdown {
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    height: 50px;
+    width: 50px;
+    background-color: darkolivegreen;
+    display: none;
+
+    @include media-breakpoint-down(sm) {
+        display: block;
+    }
+}
