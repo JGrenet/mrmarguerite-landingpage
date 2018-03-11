@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta charset="UTF-8">
 
+        <link rel="stylesheet" href="css/font.min.css">
         <link rel="stylesheet" href="css/style.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
     </head>
@@ -14,15 +15,17 @@
                 <header class="col-12">
                     <div class="row" style="height:100%">
                         <div id="top-bar" class="col-12">
-                            <div id="media-container"></div>
+                            <div id="media-container">
+                                <img src="./img/logo_insta.png" height="20px" width="20px">
+                                <img class="has-margin" src="./img/logo_facebook.png" height="20px" width="20px">
+                                <img class="has-margin" src="./img/logo_twitter.png" height="20px" width="25px">
+                            </div>
                             <div class="row no-gutters" id="signin-container">
-                                <div class="col-md-4 col-12">S'IDENTIFIER</div>
-                                <div class="col-md-4 col-12">CREER UN COMPTE</div>
-                                <div class="col-md-4 col-12">PANIER(0)</div>
+                                <div class="sg-end-align col-md-4 col-12">S'IDENTIFIER</div>
+                                <div class="sg-end-align col-md-4 col-12">CREER UN COMPTE</div>
+                                <div class="sg-end-align col-md-4 col-12">PANIER(0)</div>
                                 <div class="col-12">
-                                    <span style="border: 1px solid black">
-                                        ACTIVER MA CARTE CADEAU
-                                    </span>
+                                    <div id="cadeau-div">ACTIVER MA CARTE CADEAU</div>
                                 </div>
                             </div>
                         </div>
@@ -30,11 +33,11 @@
                             <nav>
                                 <ul class="row justify-content-center no-gutters">
                                     <li >CONCEPT</li>
-                                    <li >S'ABONNER</li>
-                                    <li >OFFRIR</li>
+                                    <li class="has-margin">S'ABONNER</li>
+                                    <li class="has-margin">OFFRIR</li>
                                     <li id="li-middle-gap">BOUQUETS</li>
-                                    <li>JOURNAL</li>
-                                    <li >E-SHOP</li>
+                                    <li class="has-margin">JOURNAL</li>
+                                    <li class="has-margin">E-SHOP</li>
                                 </ul>
                             </nav>
                             <div id="top-img-container"></div>
@@ -47,10 +50,10 @@
                         <div id="abo-left-block" class="col-md-6 col-sm-8">
                                 <div id="abo-row" class="row">
                                         <div class="col-12">
-                                            <span style="font-weight: bold">UN BOUQUET DE FLEURS DE SAISON</span>
+                                            <span id="abo-text-1">UN BOUQUET DE FLEURS DE SAISON</span>
                                         </div>
                                         <div class="col-12">
-                                                <span>LIVRÉ CHEZ VOUS, CHAQUE MOIS.</span>
+                                            <span id="abo-text-2">LIVRÉ CHEZ VOUS, CHAQUE MOIS.</span>
                                         </div>
                                         <div id="abo-btn-container" class="col-12">
                                             <button id="abo-btn">JE M'ABONNE</button>
@@ -60,6 +63,25 @@
                         </div>
                         <div class="col-md-6 col-sm-12" style="height: 100%; background-color: red;"></div>
                     </div>                    
+                </div>
+                <div id="abo-desc" class="col-12">
+                    <div class="row justify-content-center">
+                        <div id="desc-1" class="col-8">
+                            <span>LA BOX DES FLEURS</span>
+                            <span> qui rime avec bonheur...</span>
+                        </div>
+                        <div id="desc-2" class="col-8">
+                            <span>PENDANT PLUSIEURS MOIS:</span>
+                        </div>
+                        <div id="desc-3" class="col-8">
+                            <div class="row justify-content-center" style="height: 100%">
+                                <div class="step-div"></div>
+                                <div class="step-div" style="margin-left: 20px;"></div>
+                                <div class="step-div" style="margin-left: 20px;"></div>
+                            </div>
+                        </div>
+                        <div class="col-8"></div>
+                    </div>
                 </div>
             </div>
         </div>
