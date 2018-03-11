@@ -373,10 +373,6 @@ header {
     header {
       height: 200px; } }
 
-#section-abo {
-  height: 200px;
-  background-color: lightgrey; }
-
 #top-bar {
   height: 40%;
   display: flex;
@@ -458,3 +454,64 @@ nav li {
   @media (max-width: 767px) {
     #menu-dropdown {
       display: block; } }
+
+#section-abo {
+  height: 300px; }
+
+#abo-row {
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%); }
+
+#abo-row div {
+  text-align: center; }
+
+#section-abo span {
+  font-size: 26px;
+  line-height: 35px; }
+  @media (max-width: 991px) {
+    #section-abo span {
+      font-size: 20px; } }
+  @media (max-width: 767px) {
+    #section-abo span {
+      font-size: 18px; } }
+
+#abo-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px; }
+  @media (max-width: 767px) {
+    #abo-btn-container {
+      flex-direction: column; } }
+
+#abo-btn {
+  background-color: #feaf86;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: bold;
+  border: none;
+  height: 40px; }
+
+#offre-btn {
+  margin-left: 20px;
+  background-color: #ffd3be;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  height: 40px; }
+  @media (max-width: 767px) {
+    #offre-btn {
+      margin-left: unset;
+      margin-top: 20px; } }
+
+#abo-left-block {
+  height: 100%;
+  background-color: #f2f3f4; }
+  @media (max-width: 767px) {
+    #abo-left-block {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: unset;
+      z-index: 1; } }
