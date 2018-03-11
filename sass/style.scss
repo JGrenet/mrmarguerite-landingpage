@@ -170,7 +170,14 @@ nav li {
 }
 
 #section-abo {
-    height: 300px;
+    height: 400px;
+    background: url("../img/fleur_saison.png");
+    background-size: cover;
+    background-position: right;
+
+    @include media-breakpoint-down(md) {
+        background-position: unset;
+    }
 }
 
 #abo-row {
@@ -184,15 +191,19 @@ nav li {
 }
 
 #section-abo span {
-    line-height: 35px;
-    font-size: 26px;
+    line-height: 40px;
+    font-size: 28px;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 25px;
+    }
 
     @include media-breakpoint-down(md) {
         font-size: 20px;
     }
 
     @include media-breakpoint-down(sm) {
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 
@@ -208,29 +219,41 @@ nav li {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 50px;
 
     @include media-breakpoint-down(sm) {
         flex-direction: column;
     }
 }
 
-#abo-btn {
-    background-color : rgb(254, 175, 134);
+.abo-custom-btn {
     padding-left: 20px;
     padding-right: 20px;
-    font-weight: bold;
     border: none;
-    height: 40px;
+    height: 50px;
+    width: 200px;
+    font-family: "Gotham-medium";
+    font-size: 18px;
+    position: relative;
+
+    @include media-breakpoint-down(md) {
+        font-size: 15px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+#abo-btn {
+    background-color : rgb(254, 175, 134);
+    font-weight: bold;
 }
 
 #offre-btn {
     margin-left: 20px;
     background-color : rgb(255, 211, 190);
-    padding-left: 20px;
-    padding-right: 20px;
-    border: none;
-    height: 40px;
 
     @include media-breakpoint-down(sm) {
       margin-left: unset;
@@ -240,15 +263,6 @@ nav li {
 
 #abo-left-block {
     height: 100%;
-    background-color: #f2f3f4;
-
-    @include media-breakpoint-down(sm) {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: unset;
-        z-index: 1;
-    }
 }
 
 #desc-1 {

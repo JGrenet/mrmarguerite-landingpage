@@ -503,7 +503,13 @@ nav li {
       display: block; } }
 
 #section-abo {
-  height: 300px; }
+  height: 400px;
+  background: url("../img/fleur_saison.png");
+  background-size: cover;
+  background-position: right; }
+  @media (max-width: 991px) {
+    #section-abo {
+      background-position: unset; } }
 
 #abo-row {
   top: 50%;
@@ -514,14 +520,17 @@ nav li {
   text-align: center; }
 
 #section-abo span {
-  line-height: 35px;
-  font-size: 26px; }
+  line-height: 40px;
+  font-size: 28px; }
+  @media (max-width: 1199px) {
+    #section-abo span {
+      font-size: 25px; } }
   @media (max-width: 991px) {
     #section-abo span {
       font-size: 20px; } }
   @media (max-width: 767px) {
     #section-abo span {
-      font-size: 18px; } }
+      font-size: 15px; } }
 
 #abo-text-1 {
   font-family: "Gotham-bold"; }
@@ -533,41 +542,42 @@ nav li {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 40px; }
+  margin-top: 50px; }
   @media (max-width: 767px) {
     #abo-btn-container {
       flex-direction: column; } }
 
-#abo-btn {
-  background-color: #feaf86;
+.abo-custom-btn {
   padding-left: 20px;
   padding-right: 20px;
-  font-weight: bold;
   border: none;
-  height: 40px; }
+  height: 50px;
+  width: 200px;
+  font-family: "Gotham-medium";
+  font-size: 18px;
+  position: relative; }
+  @media (max-width: 991px) {
+    .abo-custom-btn {
+      font-size: 15px; } }
+  @media (max-width: 767px) {
+    .abo-custom-btn {
+      left: 50%;
+      transform: translateX(-50%); } }
+
+#abo-btn {
+  background-color: #feaf86;
+  font-weight: bold; }
 
 #offre-btn {
   margin-left: 20px;
-  background-color: #ffd3be;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: none;
-  height: 40px; }
+  background-color: #ffd3be; }
   @media (max-width: 767px) {
     #offre-btn {
       margin-left: unset;
       margin-top: 20px; } }
 
 #abo-left-block {
-  height: 100%;
-  background-color: #f2f3f4; }
-  @media (max-width: 767px) {
-    #abo-left-block {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: unset;
-      z-index: 1; } }
+  height: 100%; }
 
 #desc-1 {
   height: 100px;
