@@ -582,23 +582,135 @@ nav li {
 #desc-1 {
   height: 100px;
   background-color: white;
-  line-height: 100px;
   text-align: center;
-  font-size: 26px; }
+  padding-top: 40px; }
+  @media (max-width: 575px) {
+    #desc-1 {
+      padding-top: 25px; } }
+
+#box-fleur-txt {
+  font-family: 'Gotham-bold';
+  word-spacing: 10px;
+  font-size: 24px; }
+  @media (max-width: 767px) {
+    #box-fleur-txt {
+      font-size: 20px; } }
+  @media (max-width: 575px) {
+    #box-fleur-txt {
+      font-size: 15px; } }
+
+#box-bonheur-txt {
+  font-family: 'Ball-Pen';
+  font-size: 40px;
+  margin-left: 10px; }
+  @media (max-width: 767px) {
+    #box-bonheur-txt {
+      font-size: 36px; } }
+  @media (max-width: 575px) {
+    #box-bonheur-txt {
+      display: block;
+      font-size: 30px; } }
 
 #desc-2 {
   height: 50px;
   background-color: white;
   line-height: 50px;
   text-align: center;
-  font-size: 12px;
+  font-size: 13px;
   text-decoration: underline;
-  font-weight: bold; }
+  font-family: "Gotham-medium"; }
 
-#desc-3 {
-  height: 350px; }
+#step-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row; }
+  @media (max-width: 991px) {
+    #step-container {
+      flex-direction: column;
+      justify-content: center; } }
 
 .step-div {
-  height: 100%;
-  width: 250px;
+  height: 460px;
+  width: 320px;
+  margin-left: 20px;
   background-color: black; }
+  @media (max-width: 1199px) {
+    .step-div {
+      width: 250px;
+      height: 360px; } }
+  @media (max-width: 991px) {
+    .step-div {
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 20px;
+      width: 320px;
+      height: 460px; } }
+  @media (max-width: 575px) {
+    .step-div {
+      width: 250px;
+      height: 360px; } }
+
+.step-img-container {
+  height: 65%; }
+
+#sic-1 {
+  background: url("../img/step_1.png");
+  background-size: cover; }
+
+#sic-2 {
+  background: url("../img/step_2.png");
+  background-size: cover; }
+
+#sic-3 {
+  background: url("../img/step_3.png");
+  background-size: cover; }
+
+.step-desc {
+  height: 35%;
+  background-color: #ffe7d5;
+  text-align: center; }
+
+.step-cirle {
+  width: 25px;
+  height: 25px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  border: 1px solid #acacac;
+  border-radius: 50%;
+  line-height: 20px; }
+
+.step-title {
+  font-family: "Gotham-bold";
+  font-size: 19px;
+  line-height: 22px; }
+  @media (max-width: 1199px) {
+    .step-title {
+      font-size: 16px;
+      line-height: 16px; } }
+  @media (max-width: 991px) {
+    .step-title {
+      font-size: 19px;
+      line-height: 22px; } }
+  @media (max-width: 575px) {
+    .step-title {
+      font-size: 16px;
+      line-height: 16px; } }
+
+.step-txt {
+  font-family: "Gotham-book";
+  font-size: 13px;
+  line-height: 18px; }
+  @media (max-width: 1199px) {
+    .step-txt {
+      font-size: 11px;
+      line-height: 15px; } }
+  @media (max-width: 991px) {
+    .step-txt {
+      font-size: 13px;
+      line-height: 18px; } }
+  @media (max-width: 575px) {
+    .step-txt {
+      font-size: 11px;
+      line-height: 15px; } }
