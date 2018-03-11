@@ -632,7 +632,6 @@ nav li {
 .step-div {
   height: 460px;
   width: 320px;
-  margin-left: 20px;
   background-color: black; }
   @media (max-width: 1199px) {
     .step-div {
@@ -649,6 +648,12 @@ nav li {
     .step-div {
       width: 250px;
       height: 360px; } }
+
+#step-container .has-margin {
+  margin-left: 20px; }
+  @media (max-width: 991px) {
+    #step-container .has-margin {
+      margin-left: auto; } }
 
 .step-img-container {
   height: 65%; }
@@ -714,3 +719,69 @@ nav li {
     .step-txt {
       font-size: 11px;
       line-height: 15px; } }
+
+#abo-container {
+  width: 1000px;
+  height: 115px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  border: 3px solid #f19f75; }
+  @media (max-width: 1199px) {
+    #abo-container {
+      width: 790px; } }
+  @media (max-width: 991px) {
+    #abo-container {
+      width: 80%; } }
+  @media (max-width: 575px) {
+    #abo-container {
+      min-width: 250px; } }
+
+#abo-text-up {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-family: "Gotham-bold";
+  font-size: 28px; }
+  @media (max-width: 767px) {
+    #abo-text-up {
+      font-size: 23px; } }
+  @media (max-width: 575px) {
+    #abo-text-up {
+      font-size: 16px; } }
+
+#abo-text-down {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-family: "Gotham-book";
+  font-size: 18px; }
+  @media (max-width: 767px) {
+    #abo-text-down {
+      font-size: 13px; } }
+  @media (max-width: 575px) {
+    #abo-text-down {
+      font-size: 10px; } }
+
+#bottom-abo-btn {
+  background-color: #feaf86;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  height: 50px;
+  width: 200px;
+  font-family: "Gotham-medium";
+  font-size: 18px;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1; }
+  @media (max-width: 767px) {
+    #bottom-abo-btn {
+      height: 40px;
+      bottom: -20px;
+      font-size: 15px; } }
