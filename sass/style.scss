@@ -315,7 +315,7 @@ nav li {
     font-family: "Gotham-medium";
 }
 
-#step-container {
+.tripart-container {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -349,7 +349,7 @@ nav li {
     }
 }
 
-#step-container .has-margin {
+.tripart-container .has-margin {
     margin-left: 20px;
 
     @include media-breakpoint-down(md) {
@@ -620,7 +620,7 @@ nav li {
 
 /* BLOC n°5 Conception Artisanale */
 
-#artisanale-container {
+.onepart-container {
     width: 1000px;
     left: 50%;
     transform: translateX(-50%);
@@ -750,5 +750,254 @@ nav li {
 
     @include media-breakpoint-down(lg) {
         background-position: right;
+    }
+}
+
+/* BLOC n°8 Pense_tout */
+
+#pense_tout_title {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+#pense_tout_title span {
+    text-decoration: underline;
+    font-family: "Gotham-medium";
+}
+
+.pt-div {
+    height: 110px;
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+
+    @include media-breakpoint-down(lg) {
+        width: 250px;
+    }
+
+    @include media-breakpoint-down(md) {
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 20px;
+        width: 320px;
+    }
+
+    @include media-breakpoint-down(xs) {
+        width: 250px;
+    }
+}
+
+.pt-img img {
+    position: relative;
+    top: 50%;
+    width: 40px;
+    transform: translateY(-50%);
+    margin-left: 50px;
+}
+
+.pt-txt {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+    font-size: 11px;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 9px;
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: 11px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 9px;
+    }
+}
+
+.pt-span-1 {
+    font-family: "Gotham-bold";
+}
+
+.pt-span-2 {
+    font-family: "Gotham-book";
+}
+
+/* BLOC n°9 Nos-abonnées */
+
+#parle-img {
+    height: 320px;
+    width: 312px;
+    background: url('../img/bouquet.png');
+    background-size: 100% 100%;
+
+    @include media-breakpoint-down(sm) {
+        width: 320px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+    }
+
+    @include media-breakpoint-down(xs) {
+        width: 250px;
+        height: 270px;
+    }
+}
+
+#parle-txt-container {
+    height: 320px;
+    width: calc(100% - 312px);
+    background-color: #ffe7d5;
+
+
+    @include media-breakpoint-down(sm) {
+        width: 320px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+    }
+
+    @include media-breakpoint-down(xs) {
+        width: 250px;
+        height: 270px;
+    }
+
+}
+
+#parle-txt {
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+#p-span-1 {
+    font-family: "Gotham-bold";
+    font-size: 18px;
+    letter-spacing: 1px;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 15px;
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: 12px;
+    }
+
+    @include media-breakpoint-down(xs) {
+        font-size: 10px;
+    }
+}
+
+#p-span-2 {
+    font-family: "Ball-Pen";
+    font-size: 50px;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 40px;
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: 25px;
+    }
+
+    @include media-breakpoint-down(xs) {
+        font-size: 20px;
+    }
+}
+
+#p-span-3 {
+    font-family: "Gotham-book";
+    font-size: 15px;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 12px;
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: 8px;
+    }
+
+    @include media-breakpoint-down(xs) {
+        font-size: 7px;
+    }
+}
+
+#username-col {
+    margin-top: 10px;
+
+    @include media-breakpoint-down(xs) {
+        margin-top: 5px;
+    }
+}
+
+#p-span-4 {
+    font-family: "Gotham-bold";
+    font-size: 16px;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 13px;
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: 9px;
+    }
+
+    @include media-breakpoint-down(xs) {
+        font-size: 8px;
+    }
+}
+
+#parle-btn-col {
+    margin-top: 25px;
+
+    @include media-breakpoint-down(xs) {
+        margin-top: 10px; 
+    }
+}
+
+#parle-btn {
+    width: 100%;
+}
+
+#parle-btn .has-margin {
+    margin-left: 30px;
+
+    @include media-breakpoint-down(sm) {
+        margin-left: unset;
+        margin-top: 10px;
+    }
+}
+
+.btn-parle {
+    background-color: #ffe7d5;
+    border: 1px solid black !important;
+    font-family: "Gotham-medium";
+    font-size: 17px;
+    letter-spacing: 2px;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 15px;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 30px;
+        font-size: 11px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        width: 80%;
+    }
+
+    @include media-breakpoint-down(xs) {
+        font-size: 9px; 
     }
 }
