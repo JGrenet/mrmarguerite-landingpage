@@ -329,7 +329,6 @@ nav li {
 .step-div {
     height: 460px;
     width: 320px;
-    background-color: black;
 
     @include media-breakpoint-down(lg) {
         width: 250px;
@@ -515,3 +514,104 @@ nav li {
         font-size: 15px;
     }
 }
+
+
+/* Bloc n°4 "fleurs saison" */
+
+#fleurs-saison {
+    height: 400px;
+    background: url('../img/fleur_saison_2.png');
+    background-size: cover;
+
+    @include media-breakpoint-down(lg) {
+        background-position: right;
+    }
+}
+
+#fleurs-saison-content {
+    height: 100%;
+}
+
+#fleurs-saison-row {
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#fs-span-1 {
+    font-family: "Gotham-bold";
+    font-size: 24px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 20px;
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: 12px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 20px;
+    }
+}
+
+#fs-span-2 {
+    font-family: "Ball-Pen";
+    font-size: 48px;
+    margin-left: 5px;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 40px;
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: 32px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 40px;
+    }
+}
+
+#fs-span-3 {
+    font-family: "Gotham-bold";
+    font-size: 14px;
+    letter-spacing: 1px;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 10px;
+    }
+}
+
+#fs-span-4 {
+    font-family: "Gotham-book";
+    font-size: 14px;
+    letter-spacing: 1px;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 10px;
+    }
+
+}
+
+#decouvrir-btn {
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid white;
+    height: 35px;
+    font-family: "Gotham-medium";
+    background-color: #92B0CB;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 2px;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 12px;
+    }
+
+}
+
