@@ -720,7 +720,7 @@ nav li {
       font-size: 11px;
       line-height: 15px; } }
 
-#abo-container {
+.or-btn-container {
   width: 1000px;
   height: 115px;
   top: 50%;
@@ -729,16 +729,16 @@ nav li {
   position: relative;
   border: 3px solid #f19f75; }
   @media (max-width: 1199px) {
-    #abo-container {
+    .or-btn-container {
       width: 790px; } }
   @media (max-width: 991px) {
-    #abo-container {
+    .or-btn-container {
       width: 80%; } }
   @media (max-width: 575px) {
-    #abo-container {
+    .or-btn-container {
       min-width: 250px; } }
 
-#abo-text-up {
+.obc-text-up {
   width: 100%;
   height: 50px;
   text-align: center;
@@ -746,26 +746,26 @@ nav li {
   font-family: "Gotham-bold";
   font-size: 28px; }
   @media (max-width: 767px) {
-    #abo-text-up {
+    .obc-text-up {
       font-size: 23px; } }
   @media (max-width: 575px) {
-    #abo-text-up {
+    .obc-text-up {
       font-size: 16px; } }
 
-#abo-text-down {
+.obc-text-down {
   width: 100%;
   height: 50px;
   text-align: center;
   font-family: "Gotham-book";
   font-size: 18px; }
   @media (max-width: 767px) {
-    #abo-text-down {
+    .obc-text-down {
       font-size: 13px; } }
   @media (max-width: 575px) {
-    #abo-text-down {
+    .obc-text-down {
       font-size: 10px; } }
 
-#bottom-abo-btn {
+.obc-btn {
   background-color: #feaf86;
   font-weight: bold;
   padding-left: 20px;
@@ -781,7 +781,7 @@ nav li {
   transform: translateX(-50%);
   z-index: 1; }
   @media (max-width: 767px) {
-    #bottom-abo-btn {
+    .obc-btn {
       height: 40px;
       bottom: -20px;
       font-size: 15px; } }
@@ -863,3 +863,103 @@ nav li {
   @media (max-width: 767px) {
     #decouvrir-btn {
       font-size: 12px; } }
+
+/* BLOC n°5 Conception Artisanale */
+#artisanale-container {
+  width: 1000px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  display: flex;
+  flex-direction: row; }
+  @media (max-width: 1199px) {
+    #artisanale-container {
+      width: 790px; } }
+  @media (max-width: 991px) {
+    #artisanale-container {
+      width: 80%; } }
+  @media (max-width: 767px) {
+    #artisanale-container {
+      flex-direction: column; } }
+  @media (max-width: 575px) {
+    #artisanale-container {
+      min-width: 250px; } }
+
+#artisanale-left {
+  height: 400px;
+  width: 50%;
+  background: url("../img/artisanale.png");
+  background-size: 100% 100%; }
+  @media (max-width: 1199px) {
+    #artisanale-left {
+      height: 350px; } }
+  @media (max-width: 991px) {
+    #artisanale-left {
+      height: 300px; } }
+  @media (max-width: 767px) {
+    #artisanale-left {
+      width: 320px;
+      left: 50%;
+      transform: translateX(-50%);
+      position: relative; } }
+  @media (max-width: 575px) {
+    #artisanale-left {
+      width: 250px;
+      height: 270px; } }
+
+#artisanale-right {
+  height: 400px;
+  width: 50%;
+  background-color: #ffae85; }
+  @media (max-width: 1199px) {
+    #artisanale-right {
+      height: 350px; } }
+  @media (max-width: 991px) {
+    #artisanale-right {
+      height: 300px; } }
+  @media (max-width: 767px) {
+    #artisanale-right {
+      width: 320px;
+      left: 50%;
+      transform: translateX(-50%);
+      position: relative; } }
+  @media (max-width: 575px) {
+    #artisanale-right {
+      width: 250px;
+      height: 270px; } }
+
+#conception-txt-container {
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+  text-align: center;
+  color: black; }
+
+#artisanale-img {
+  width: 50px;
+  height: 50px; }
+  @media (max-width: 991px) {
+    #artisanale-img {
+      width: 40px;
+      height: 40px; } }
+
+#a-span-1 {
+  font-family: "Gotham-bold";
+  letter-spacing: 2px;
+  font-size: 15px; }
+  @media (max-width: 991px) {
+    #a-span-1 {
+      font-size: 12px; } }
+  @media (max-width: 575px) {
+    #a-span-1 {
+      font-size: 10px; } }
+
+#a-span-2 {
+  font-family: "Ball-Pen";
+  font-size: 50px; }
+  @media (max-width: 991px) {
+    #a-span-2 {
+      font-size: 45px; } }
+  @media (max-width: 575px) {
+    #a-span-2 {
+      font-size: 40px; } }

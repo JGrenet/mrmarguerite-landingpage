@@ -436,7 +436,7 @@ nav li {
     }
 }
 
-#abo-container {
+.or-btn-container {
     width: 1000px;
     height: 115px;
     top: 50%;
@@ -459,7 +459,7 @@ nav li {
 
 }
 
-#abo-text-up {
+.obc-text-up {
     width: 100%;
     height: 50px;
     text-align: center;
@@ -476,7 +476,7 @@ nav li {
     }
 }
 
-#abo-text-down {
+.obc-text-down {
     width: 100%;
     height: 50px;
     text-align: center;
@@ -492,7 +492,7 @@ nav li {
     }
 }
 
-#bottom-abo-btn {
+.obc-btn {
     background-color : rgb(254, 175, 134);
     font-weight: bold;
     padding-left: 20px;
@@ -615,3 +615,125 @@ nav li {
 
 }
 
+/* BLOC n°5 Conception Artisanale */
+
+#artisanale-container {
+    width: 1000px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    @include media-breakpoint-down(lg) {
+        width: 790px;
+    }
+
+    @include media-breakpoint-down(md) {
+        width: 80%;
+    }
+
+     @include media-breakpoint-down(sm) {
+         flex-direction: column;
+     }
+
+    @include media-breakpoint-down(xs) {
+        min-width: 250px;
+    }
+}
+
+#artisanale-left {
+    height: 400px;
+    width: 50%;
+    background: url('../img/artisanale.png');
+    background-size: 100% 100%;
+
+    @include media-breakpoint-down(lg) {
+        height: 350px;
+    }
+
+    @include media-breakpoint-down(md) {
+        height: 300px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        width: 320px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+    }
+
+    @include media-breakpoint-down(xs) {
+        width: 250px;
+        height: 270px;
+    }
+}
+
+#artisanale-right {
+    height: 400px;
+    width: 50%;
+    background-color: #ffae85;
+
+    @include media-breakpoint-down(lg) {
+        height: 350px;
+    }
+
+    @include media-breakpoint-down(md) {
+        height: 300px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        width: 320px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+    }
+
+    @include media-breakpoint-down(xs) {
+        width: 250px;
+        height: 270px;
+    }
+}
+
+#conception-txt-container {
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+#artisanale-img {
+    @include size(50px, 50px);
+
+    @include media-breakpoint-down(md) {
+        @include size(40px, 40px);
+    }
+}
+
+#a-span-1 {
+    font-family: "Gotham-bold";
+    letter-spacing: 2px;
+    font-size: 15px;
+
+    @include media-breakpoint-down(md) {
+        font-size: 12px;
+    }
+
+    @include media-breakpoint-down(xs) {
+        font-size: 10px;
+    }
+}
+
+#a-span-2 {
+    font-family: "Ball-Pen";
+    font-size: 50px;
+
+    @include media-breakpoint-down(md) {
+        font-size: 45px;
+    }
+
+    @include media-breakpoint-down(xs) {
+        font-size: 40px;
+    }
+}
