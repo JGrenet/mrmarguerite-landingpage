@@ -518,29 +518,32 @@ nav li {
 
 /* Bloc n°4 "fleurs saison" */
 
-#fleurs-saison {
+.middle-container {
     height: 400px;
+}
+
+#fleurs-saison {
     background: url('../img/fleur_saison_2.png');
     background-size: cover;
+    color: white;    
 
     @include media-breakpoint-down(lg) {
         background-position: right;
     }
 }
 
-#fleurs-saison-content {
+.middle-container-content {
     height: 100%;
 }
 
-#fleurs-saison-row {
+.middle-container-row {
     top: 50%;
     transform: translateY(-50%);
     position: relative;
     text-align: center;
-    color: white;
 }
 
-#fs-span-1 {
+.mc-span-1 {
     font-family: "Gotham-bold";
     font-size: 24px;
     word-spacing: 5px;
@@ -559,7 +562,7 @@ nav li {
     }
 }
 
-#fs-span-2 {
+.mc-span-2 {
     font-family: "Ball-Pen";
     font-size: 48px;
     margin-left: 5px;
@@ -577,7 +580,7 @@ nav li {
     }
 }
 
-#fs-span-3 {
+.mc-span-3 {
     font-family: "Gotham-bold";
     font-size: 14px;
     letter-spacing: 1px;
@@ -587,7 +590,7 @@ nav li {
     }
 }
 
-#fs-span-4 {
+.mc-span-4 {
     font-family: "Gotham-book";
     font-size: 14px;
     letter-spacing: 1px;
@@ -735,5 +738,17 @@ nav li {
 
     @include media-breakpoint-down(xs) {
         font-size: 40px;
+    }
+}
+
+/* Bloc n°7 Fleurissons-France */
+
+#fleurissons-france {
+    background: url('../img/fleurissons_france.png');
+    background-size: cover;
+    color: black;
+
+    @include media-breakpoint-down(lg) {
+        background-position: right;
     }
 }

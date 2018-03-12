@@ -787,67 +787,69 @@ nav li {
       font-size: 15px; } }
 
 /* Bloc n°4 "fleurs saison" */
+.middle-container {
+  height: 400px; }
+
 #fleurs-saison {
-  height: 400px;
   background: url("../img/fleur_saison_2.png");
-  background-size: cover; }
+  background-size: cover;
+  color: white; }
   @media (max-width: 1199px) {
     #fleurs-saison {
       background-position: right; } }
 
-#fleurs-saison-content {
+.middle-container-content {
   height: 100%; }
 
-#fleurs-saison-row {
+.middle-container-row {
   top: 50%;
   transform: translateY(-50%);
   position: relative;
-  text-align: center;
-  color: white; }
+  text-align: center; }
 
-#fs-span-1 {
+.mc-span-1 {
   font-family: "Gotham-bold";
   font-size: 24px;
   word-spacing: 5px;
   letter-spacing: 2px; }
   @media (max-width: 1199px) {
-    #fs-span-1 {
+    .mc-span-1 {
       font-size: 20px; } }
   @media (max-width: 991px) {
-    #fs-span-1 {
+    .mc-span-1 {
       font-size: 12px; } }
   @media (max-width: 767px) {
-    #fs-span-1 {
+    .mc-span-1 {
       font-size: 20px; } }
 
-#fs-span-2 {
+.mc-span-2 {
   font-family: "Ball-Pen";
   font-size: 48px;
   margin-left: 5px; }
   @media (max-width: 1199px) {
-    #fs-span-2 {
+    .mc-span-2 {
       font-size: 40px; } }
   @media (max-width: 991px) {
-    #fs-span-2 {
+    .mc-span-2 {
       font-size: 32px; } }
   @media (max-width: 767px) {
-    #fs-span-2 {
+    .mc-span-2 {
       font-size: 40px; } }
 
-#fs-span-3 {
+.mc-span-3 {
   font-family: "Gotham-bold";
   font-size: 14px;
   letter-spacing: 1px; }
   @media (max-width: 1199px) {
-    #fs-span-3 {
+    .mc-span-3 {
       font-size: 10px; } }
 
-#fs-span-4 {
+.mc-span-4 {
   font-family: "Gotham-book";
   font-size: 14px;
   letter-spacing: 1px; }
   @media (max-width: 1199px) {
-    #fs-span-4 {
+    .mc-span-4 {
       font-size: 10px; } }
 
 #decouvrir-btn {
@@ -963,3 +965,12 @@ nav li {
   @media (max-width: 575px) {
     #a-span-2 {
       font-size: 40px; } }
+
+/* Bloc n°7 Fleurissons-France */
+#fleurissons-france {
+  background: url("../img/fleurissons_france.png");
+  background-size: cover;
+  color: black; }
+  @media (max-width: 1199px) {
+    #fleurissons-france {
+      background-position: right; } }
